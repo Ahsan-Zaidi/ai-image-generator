@@ -17,7 +17,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  background: #f4f4f4;
+  background: rgb(0, 0, 0);
 }
 
 /* Navbar */
@@ -99,15 +99,16 @@ form button:hover {
 }
 
 /* Image */
-
 .image {
   width: 100%;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 img {
   display: block;
   margin: auto;
+  border: 1px solid white;
 }
 
 .msg {

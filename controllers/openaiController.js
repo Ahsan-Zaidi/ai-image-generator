@@ -8,7 +8,7 @@ const openai = new OpenAIApi(configuration);
 const generateImage = async (req, res) => {
     try {
         const response = await openai.createImage({
-            prompt: 'Harry potter dunking a basketball',
+            prompt: 'robotic reptile',
             n: 1,
             size: '512x512'
         });
@@ -26,7 +26,7 @@ const generateImage = async (req, res) => {
           } else {
             console.log(error.message);
         }
-        
+
         res.status(400).json({
             success: false,
             error: 'The image could not be generated'
